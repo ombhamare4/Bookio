@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".activity.DescriptionActivity">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/descriptiontoolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:background="@color/radicalRed"
+        android:minHeight="?attr/actionBarSize"
+        android:theme="@style/ThemeOverlay.AppCompat.ActionBar"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:title="Book Detail"
+        app:titleTextColor="@color/white" />
+
+    <RelativeLayout
+        android:id="@+id/bottomlayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/descriptiontoolbar">
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bookInfocard"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/aliceBlue"
+            app:cardCornerRadius="20dp">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/imgbook"
+                    android:layout_width="100dp"
+                    android:layout_height="150dp"
+                    android:src="@drawable/default_book_cover" />
+
+                <TextView
+                    android:id="@+id/txtRecyclerRowItemName"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imgbook"
+                    android:fontFamily="sans-serif"
+                    android:text="Default name"
+                    android:textColor="@color/radicalRed"
+                    android:textSize="22sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/imgRecyclerRowItemRatingLogo"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginTop="6dp"
+                    android:layout_toLeftOf="@+id/txtRecyclerRowItemRating"
+                    android:src="@drawable/ic_rating_name" />
+
+                <TextView
+                    android:id="@+id/txtRecyclerRowItemRating"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="5dp"
+                    android:fontFamily="sans-serif"
+                    android:padding="10dp"
+                    android:text="@string/_4_5"
+                    android:textColor="@color/supernova"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtRecyclerRowItemAuthor"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtRecyclerRowItemName"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imgbook"
+                    android:fontFamily="sans-serif"
+                    android:text="@string/author"
+                    android:textColor="@color/black"
+                    android:textSize="18sp" />
+
+                <TextView
+                    android:id="@+id/txtRecyclerRowItemPrice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/txtRecyclerRowItemAuthor"
+                    android:layout_marginTop="5dp"
+                    android:layout_toRightOf="@+id/imgbook"
+                    android:fontFamily="sans-serif"
+                    android:text="Rs.499.99"
+                    android:textColor="@color/caribbeanGreen"
+                    android:textSize="18sp" />
+            </RelativeLayout>
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/bookDiscriptionCard"
+            android:layout_width="match_parent"
+            android:layout_height="430dp"
+            android:layout_below="@+id/bookInfocard"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:backgroundTint="@color/aliceBlue"
+            app:cardPreventCornerOverlap="true"
+            app:cardCornerRadius="8dp"
+            >
+
+            <ScrollView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:padding="10dp">
+
+                    <TextView
+                        android:id="@+id/aboutTheBook"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:textColor="@color/black"
+                        android:text="About The Book"
+                        android:textSize="18sp" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/black"
+                        android:layout_below="@+id/aboutTheBook"
+                        android:fontFamily="sans-serif"
+                        android:text="Often the decision between a customer choosing you over someone like you is your ability to know exactly what to say, when to say it, and how to make it count. Phil M. Jones has trained more than two million people across five continents and over fifty countries in the lost art of spoken communication. In Exactly What to Say, he delivers the tactics you need to get more of what you want.Often the decision between a customer choosing you over someone like you is your ability to know exactly what to say, when to say it, and how to make it count. Phil M. Jones has trained more than two million people across five continents and over fifty countries in the lost art of spoken communication. In Exactly What to Say, he delivers the tactics you need to get more of what you want.Often the decision between a customer choosing you over someone like you is your ability to know exactly what to say, when to say it, and how to make it count. Phil M. Jones has trained more than two million people across five continents and over fifty countries in the lost art of spoken communication. In Exactly What to Say, he delivers the tactics you need to get more of what you want."
+                        android:textSize="18sp" />
+                </RelativeLayout>
+            </ScrollView>
+
+
+        </androidx.cardview.widget.CardView>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:padding="10dp"
+            android:id="@+id/btnFavorites"
+            android:text="@string/add_to_favourites"
+            android:layout_marginBottom="-6dp"
+            android:textColor="@color/white" />
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/progressLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:background="@color/white">
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true" />
+    </RelativeLayout>
+</RelativeLayout>

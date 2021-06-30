@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cardview"
+    android:layout_width="match_parent"
+    android:backgroundTint="@color/aliceBlue"
+    android:layout_height="150dp"
+    android:layout_margin="3dp"
+    app:cardCornerRadius="8dp">
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/llcontent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+
+    <ImageView
+        android:id="@+id/imgRecyclerRowItem"
+        android:layout_width="100dp"
+        android:layout_height="150dp"
+        android:layout_marginRight="10dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/default_book_cover" />
+
+    <TextView
+        android:id="@+id/txtRecyclerRowItemName"
+        android:layout_width="150dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="sans-serif"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imgRecyclerRowItem"
+        android:textColor="@color/radicalRed"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/imgRecyclerRowItemRatingLogo"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="6dp"
+        android:layout_toRightOf="@+id/txtRecyclerRowItemName"
+        android:src="@drawable/ic_rating_name" />
+
+    <TextView
+        android:id="@+id/txtRecyclerRowItemRating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="5dp"
+        android:padding="10dp"
+        android:fontFamily="sans-serif"
+        android:text="@string/_4_5"
+        android:textColor="@color/supernova"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/txtRecyclerRowItemAuthor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRecyclerRowItemName"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/imgRecyclerRowItem"
+        android:text="@string/author"
+        android:fontFamily="sans-serif"
+        android:textSize="18sp"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/txtRecyclerRowItemPrice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtRecyclerRowItemAuthor"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/imgRecyclerRowItem"
+        android:text="Rs.499.99"
+        android:textSize="18sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/caribbeanGreen" />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/imgRecyclerRowItem"
+        android:layout_below="@+id/txtRecyclerRowItemPrice"
+        android:layout_marginRight="10dp"
+        android:text="Add to Favourites"
+        android:textColor="@color/white"
+
+        />
+
+</RelativeLayout>
+
+</androidx.cardview.widget.CardView>

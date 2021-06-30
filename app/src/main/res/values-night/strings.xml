@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Book.io</string>
+    <string name="dashboard">Dashboard</string>
+    <string name="favourites">Favourites</string>
+    <string name="profile">Profile</string>
+    <string name="about">About</string>
+    <string name="navigation_drawer">Navigation Drawer</string>
+    <string name="close_drawer">Close Drawer</string>
+    <string name="open_drawer">Open Drawer</string>
+    <string name="logout">Logout</string>
+    <string name="about_fragment">About Fragment</string>
+    <string name="book_io">Book.io</string>
+    <string name="book_list">Book List</string>
+    <string name="_4_5">4.5</string>
+    <string name="author">Author</string>
+    <string name="add_to_favourites">Add To Favourites</string>
+</resources>

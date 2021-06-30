@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="fragment.ProfileFragment"
+    android:background="@color/white"
+    >
+
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/profilelogo"
+        android:layout_width="140dp"
+        android:layout_height="180dp"
+        android:layout_marginRight="20dp"
+        android:src="@drawable/ic_profile_name" />
+
+    <TextView
+        android:id="@+id/profilehello"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_toRightOf="@+id/profilelogo"
+        android:text="Hello"
+        android:textSize="22sp"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/black"
+        />
+
+    <TextView
+        android:id="@+id/profilename"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilehello"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@+id/profilelogo"
+        android:text="Boruto Uzumaki"
+        android:fontFamily="sans-serif"
+        android:textColor="@color/radicalRed"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/profileemail"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilename"
+        android:layout_marginTop="5dp"
+        android:fontFamily="sans-serif"
+        android:layout_toRightOf="@+id/profilelogo"
+        android:text="boruto@konaha.com"
+        android:textColor="@color/radicalRed"
+        android:textSize="18sp" />
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/profileinfocard"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/profilelogo"
+        android:minHeight="100dp"
+        android:backgroundTint="@color/radicalRed"
+        android:layout_margin="5dp"
+        >
+        <TextView
+            android:id="@+id/profilefollowersnumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilelogo"
+            android:gravity="center"
+            android:text="1.5M"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            />
+        <TextView
+            android:id="@+id/profilefollowers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilelogo"
+            android:gravity="center"
+            android:text="Followers"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="30dp"
+            />
+        <TextView
+            android:id="@+id/profilefollowingsnumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilelogo"
+            android:gravity="center"
+            android:text="10.56k"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="130dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/profilefollowing"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilelogo"
+            android:gravity="center"
+            android:text="Following"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/profilerequestnumbers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilelogo"
+            android:gravity="center"
+            android:text="100"
+            android:layout_marginLeft="250dp"
+            android:textSize="25sp"
+            android:fontFamily="sans-serif"
+            android:textColor="@color/black"
+            />
+        <TextView
+            android:id="@+id/profilerequest"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/profilelogo"
+            android:gravity="center"
+            android:text="Request"
+            android:fontFamily="sans-serif"
+            android:textSize="25sp"
+            android:layout_marginLeft="250dp"
+            android:layout_marginTop="30dp"
+            android:textColor="@color/black"
+            />
+
+
+    </androidx.cardview.widget.CardView>
+
+
+
+
+</RelativeLayout>
